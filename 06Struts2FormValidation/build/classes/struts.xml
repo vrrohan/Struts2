@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<!-- Map The url to TutorialAction class -->
+	<package name="default" extends="struts-default">
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+		<action name="register"
+			class="com.ron.message.action.PersonAction">
+			<result name="success">/thankyou.jsp</result>
+			<result name="input">/register.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+	</package>
+
+</struts>
