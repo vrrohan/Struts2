@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<field name="registerUser.firstName">
+		<field-validator type="requiredstring">
+			<message>Firstname is required.</message>
+		</field-validator>
+	</field>
+	<field name="registerUser.lastName">
+		<field-validator type="requiredstring">
+			<message>Lastname is required.</message>
+		</field-validator>
+	</field>
+	<field name="registerUser.email">
+		<field-validator type="requiredstring">
+			<message>Email is required.</message>
+		</field-validator>
+		<field-validator type="email">
+			<message>Please enter a valid email address</message>
+		</field-validator>
+	</field>
+	<field name="registerUser.age">
+		<field-validator type="int">
+			<param name="min">18</param>
+			<param name="max">60</param>
+			<message>Age is required between ${min} and ${max}.</message>
+		</field-validator>
+	</field>
+	<field name="dateOfBirth">
+		<field-validator type="date">
+			<param name="min">01/01/1970</param>
+			<param name="max">01/01/2000</param>
+			<message>Date of Birth must be within ${min} and ${max}</message>
+		</field-validator>
+	</field>
+</validators>
