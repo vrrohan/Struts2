@@ -12,7 +12,22 @@
 
 	<p>
 		Filename :
-		<s:property value="fileName" />
+		<s:property value="userImageFileName" />
+	</p>
+	<br />
+	<p>
+		Content Type :
+		<s:property value="userImageContentType"></s:property>
+	</p>
+	<br>
+	<p>
+		Uploaded File :
+		<s:property value="userImage" />
+	</p>
+	<p>
+		Uploaded Image: <img
+			src="images/<s:property value="userImageFileName"/>" width="100"
+			height="100" />
 	</p>
 
 	<p>

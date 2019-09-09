@@ -13,7 +13,7 @@
 
 	<s:form action="uploadAction" method="POST"
 		enctype="multipart/form-data">
-		<s:file name="myFile" label="Select a File to upload" size="40" />
+		<s:file name="userImage" label="Select a File to upload" size="40" />
 		<s:submit value="submit" name="submit" />
 	</s:form>
 

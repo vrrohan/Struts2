@@ -24,6 +24,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/apache-tomcat-9.0.12/lib/servlet-api.jar"/>
-	<classpathentry kind="lib" path="C:/Users/rohan.yadav/Downloads/commons-io-2.6-bin.zip"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
